@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+  
+    <groupId>com.tiengnhat</groupId>
+    <artifactId>tiengnhat</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+<dependency>
+    <groupId>com.google.code.gson</groupId>
+    <artifactId>gson</artifactId>
+    <version>2.10.1</version>
+</dependency>
+<!-- pom.xml for Maven -->
+<dependency>
+    <groupId>com.google.cloud</groupId>
+    <artifactId>google-cloud-aiplatform</artifactId>
+    <version>3.38.0</version> <!-- Check for the latest version -->
+</dependency>
+<dependency>
+    <groupId>com.google.protobuf</groupId>
+    <artifactId>protobuf-java-util</artifactId>
+    <version>3.25.3</version> <!-- Ensure compatibility or use BOM -->
+</dependency>
+<dependency>
+    <groupId>com.squareup.okhttp3</groupId>
+    <artifactId>okhttp</artifactId>
+    <version>4.9.3</version> <!-- Hoặc phiên bản mới hơn -->
+</dependency>
+
+<dependency>
+    <groupId>org.json</groupId>
+    <artifactId>json</artifactId>
+    <version>20231013</version> <!-- Hoặc phiên bản mới hơn -->
+</dependency>
+        <!-- Google API Client for Gemini API -->
+        <dependency>
+            <groupId>com.google.api-client</groupId>
+            <artifactId>google-api-client</artifactId>
+            <version>2.2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.http-client</groupId>
+            <artifactId>google-http-client-jackson2</artifactId>
+            <version>1.43.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.auth</groupId>
+            <artifactId>google-auth-library-oauth2-http</artifactId>
+            <version>1.20.0</version>
+        </dependency>
+    <dependency>
+        <groupId>com.google.cloud</groupId>
+        <artifactId>google-cloud-vertexai</artifactId>
+        <version>0.7.0</version> <!-- Hoặc phiên bản mới nhất bạn tìm thấy -->
+    </dependency>
+    <dependency>
+        <groupId>org.json</groupId>
+        <artifactId>json</artifactId>
+        <version>20231013</version> <!-- Hoặc phiên bản mới nhất -->
+    </dependency>
+<dependency>
+    <groupId>org.apache.pdfbox</groupId>
+    <artifactId>pdfbox</artifactId>
+    <version>2.0.27</version>
+</dependency>
+    <dependency>
+      <groupId>com.itextpdf</groupId>
+      <artifactId>itextpdf</artifactId>
+      <version>5.5.13.3</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.pdfbox</groupId>
+        <artifactId>pdfbox</artifactId>
+        <version>2.0.30</version> <!-- Kiểm tra phiên bản mới nhất trên Maven Central -->
+    </dependency>
+    <dependency>
+        <groupId>com.github.librepdf</groupId>
+        <artifactId>openpdf</artifactId>
+        <version>1.3.30</version> <!-- Kiểm tra phiên bản mới nhất -->
+    </dependency>
+
+    <!-- Apache POI for DOCX -->
+    <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi-ooxml</artifactId>
+        <version>5.2.5</version> <!-- Kiểm tra phiên bản mới nhất -->
+    </dependency>
+    <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi</artifactId>
+        <version>5.2.5</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.pdfbox</groupId>
+        <artifactId>pdfbox</artifactId>
+        <version>2.0.30</version> <!-- Hoặc phiên bản mới nhất của 2.x -->
+    </dependency>
+    <dependency>
+        <groupId>org.apache.pdfbox</groupId>
+        <artifactId>fontbox</artifactId>
+        <version>2.0.30</version> <!-- Cùng phiên bản với pdfbox -->
+    </dependency>
+
+    <!-- Apache POI for DOCX -->
+    <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi-ooxml</artifactId>
+        <version>5.2.5</version> <!-- Hoặc phiên bản ổn định mới nhất -->
+    </dependency>
+ <dependency>
+    <groupId>org.json</groupId>
+    <artifactId>json</artifactId>
+    <version>20231013</version> <!-- Hoặc phiên bản mới nhất -->
+</dependency>
+   <dependency>
+    <groupId>net.sourceforge.tess4j</groupId>
+    <artifactId>tess4j</artifactId>
+    <version>5.11.0</version> <!-- Kiểm tra phiên bản mới nhất -->
+</dependency>
+        <!-- MySQL Connector/J -->
+<dependency>
+    <groupId>com.formdev</groupId>
+    <artifactId>flatlaf</artifactId>
+    <version>3.4.1</version> <!-- Kiểm tra phiên bản mới nhất trên Maven Central -->
+</dependency>
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <version>8.0.33</version> <!-- Bạn có thể kiểm tra và cập nhật phiên bản mới nhất nếu muốn -->
+        </dependency>
+
+        <!-- Thêm các thư viện khác vào đây nếu cần -->
+        <!-- Ví dụ cho Apache PDFBox (để xuất PDF) -->
+        <!--
+        <dependency>
+            <groupId>org.apache.pdfbox</groupId>
+            <artifactId>pdfbox</artifactId>
+            <version>3.0.2</version>
+        </dependency>
+        -->
+
+        <!-- Ví dụ cho Apache POI (để xuất DOCX) -->
+        <!--
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>5.2.5</version>
+        </dependency>
+        -->
+
+        <!-- Ví dụ cho Tess4J (OCR từ ảnh) -->
+        <!--
+        <dependency>
+            <groupId>net.sourceforge.tess4j</groupId>
+            <artifactId>tess4j</artifactId>
+            <version>5.10.0</version>
+        </dependency>
+        -->
+
+        <!-- Ví dụ cho thư viện AI (OpenAI API Client) -->
+        <!--
+        <dependency>
+            <groupId>com.theokanning.openai-gpt3-java</groupId>
+            <artifactId>service</artifactId>
+            <version>0.18.2</version>
+        </dependency>
+        -->
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Plugin để biên dịch code Java -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version> <!-- Hoặc một phiên bản ổn định khác như 3.8.1 -->
+                <configuration>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                </configuration>
+            </plugin>
+
+            <!-- (Tùy chọn) Plugin để tạo file JAR thực thi bao gồm tất cả dependencies -->
+            <!-- Bạn sẽ cần tạo lớp Main trước khi plugin này hoạt động đúng khi build JAR -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>3.6.0</version> <!-- Hoặc một phiên bản ổn định khác -->
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                        <configuration>
+                            <archive>
+                                <manifest>
+                                    <!-- THAY THẾ 'com.tiengnhat.MainApp' BẰNG TÊN ĐẦY ĐỦ CỦA LỚP MAIN CỦA BẠN -->
+                                    <mainClass>com.tiengnhat.MainApp</mainClass>
+                                </manifest>
+                            </archive>
+                            <descriptorRefs>
+                                <descriptorRef>jar-with-dependencies</descriptorRef>
+                            </descriptorRefs>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
